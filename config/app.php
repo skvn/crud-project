@@ -156,6 +156,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Crud Package Service Providers...
+         */
+        TwigBridge\ServiceProvider::class,
+        Skvn\Crud\ServiceProvider::class,
+
     ],
 
     /*
@@ -201,6 +207,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        'Crud' => Skvn\Crud\Facades\Crud :: class,
+        'Cms' => Skvn\Crud\Facades\Cms :: class
 
     ],
 

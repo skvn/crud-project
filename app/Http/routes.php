@@ -22,14 +22,13 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
-	Route::get('/', 'WelcomeController@index');
+Route::controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);
 
-	Route::get('home', 'HomeController@index');
-
-	Route::controllers([
-		'auth' => 'Auth\AuthController',
-		'password' => 'Auth\PasswordController',
-	]);
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+    Route::get('/', 'HomeController@index');
+    Route::get('/home', 'HomeController@index');
 });
