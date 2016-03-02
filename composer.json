@@ -2,6 +2,7 @@
     "name": "skvn/crud-project",
     "description": "Laravel CRUD application",
     "keywords": ["CRUD", "admin", "laravel"],
+    "minimum-stability": "dev",
     "license": "MIT",
     "type": "project",
     "require": {
