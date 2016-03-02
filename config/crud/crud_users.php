@@ -4,6 +4,7 @@
 return [
     'acl' => 'user',
     'ent_name' => 'user',
+    'name' => 'User',
     'bc' => [],
     'list'=> [
         'default' => [
