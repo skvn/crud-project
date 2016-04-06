@@ -1,7 +1,8 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "skvn/crud-project",
+    "description": "Laravel CRUD application",
+    "keywords": ["CRUD", "admin", "laravel"],
+    "minimum-stability": "dev",
     "license": "MIT",
     "type": "project",
     "require": {
