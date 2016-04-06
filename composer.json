@@ -38,7 +38,7 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-	    "php artisan vendor:publish --provider=\"Skvn\\Crud\\ServiceProvider\" "
+	        "php artisan vendor:publish --provider=\"Skvn\\Crud\\ServiceProvider\" ",
             "php artisan optimize"
         ],
         "post-update-cmd": [
