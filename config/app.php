@@ -154,6 +154,14 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+
+        /*
+        * Crud Package Service Providers...
+        */
+        TwigBridge\ServiceProvider::class,
+        Skvn\Crud\ServiceProvider::class,
+
+        /* Routing SP after CRUD */
         App\Providers\RouteServiceProvider::class,
 
     ],
