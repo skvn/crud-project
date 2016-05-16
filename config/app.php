@@ -164,12 +164,7 @@ return [
         /* Routing SP after CRUD */
         App\Providers\RouteServiceProvider::class,
         
-        /*
-         * Crud Package Service Providers...
-         */
-        TwigBridge\ServiceProvider::class,
-        Skvn\Crud\ServiceProvider::class,
-
+       
 
     ],
 
